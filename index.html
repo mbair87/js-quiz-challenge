@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/styles.css"/>
     <title>Code Quiz</title>
 </head>
@@ -11,21 +12,24 @@
     <div id="top-bar">
        <p>Time: <span id="time">60</span></p>
     </div>
-    <div id= "start-area">
+    <div class ="container" id= "start-area">
     <h1>Coding Quiz</h1>
-    <p>
+    <p class="center-block">
         Try to answer the code related questions within the time limit
     </p>
-    <button id = "start">
+    <button type="button" class="btn btn-primary" id = "start">
         Begin Quiz
     </button>
     </div>
-    <div id="quiz-area">
-        <h1 id="questions"></h1>
-        <button id="button1"></button>
-        <button id="button2"></button>
-        <button id="button3"></button>
-        <button id="button4"></button>
+    <div class ="container" id="quiz-area">
+        <h1 class="center-block" id="questions"></h1>
+        <div class="row">
+        <button type="button" class="col-sm btn btn-primary" id="button1"></button>
+        <button type="button" class="col-sm btn btn-primary" id="button2"></button>
+        <div class="w-100"></div>
+        <button type="button" class="col-sm btn btn-primary" id="button3"></button>
+        <button type="button" class="col-sm btn btn-primary" id="button4"></button>
+    </div>
     </div>
     <script src="./assets/script.js"></script>
 </body>
